@@ -1,0 +1,113 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <asp:ContentPlaceHolder ID="HeaderAdditionPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header" id="TheHeader" runat="server">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div style="text-align: center;">
+                        <a class="navbar-brand" runat="server" href="~/">
+                            <div class="myTagBigW">N</div>
+                            <div class="myTagSmall">ICE</div>
+                            <div class="myTagBig">A</div>
+                            <div class="myTagSmall">PI.</div>
+                            <div class="myTagMid1">N</div>
+                            <div class="myTagMid2">ET</div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a runat="server" href="~/HowToUse">How to use</a></li>
+                        <li><a runat="server" href="~/HowItWorks">How it works</a></li>
+                        <li><a runat="server" href="~/Price">Price</a></li>
+                    </ul>
+                    <asp:Literal runat="server" ID="User_Admin" Visible="false">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{_root_}Sql">Sql</a></li>
+                        <li><a href="{_root_}Test?Id=ShowUsers&Sort=State&Filter=OnlyInteresting">Users</a></li>
+                        <li><a href="{_root_}Test?Id=ShowUsers&Sort=Usage&Filter=OnlyInteresting">UsersUsage</a></li>
+                        <li><a href="{_root_}Test?Id=ShowUsers&Sort=Usage&Filter=OnlyCommercial">UsersCom</a></li>
+                        <li><a href="{_root_}Test?Id=Queue">Queue</a></li>
+                        <li><a href="{_root_}Test?Id=ShowRecentMessages&Days=2">RecentMsg</a></li>
+                        <li><a href="{_root_}DataAll">EditUserData</a></li>
+                        <li><a href="{_root_}Admin">AdminLinks</a></li>
+                        <li><a href="{_root_}Login">Log in</a></li>
+                        <li><a href="{_root_}Logout">Log out</a></li>
+                    </ul>
+                    </asp:Literal>
+                    <asp:Literal runat="server" ID="User_Unknown" Visible="false">
+                    <ul class="nav navbar-nav navbar-right">
+                    	<li><a href="{_root_}Register">Register</a></li>
+                        <li><a href="{_root_}Login">Log in</a></li>
+                    </ul>
+                    </asp:Literal>
+                    <asp:Literal runat="server" ID="User_LoggedIn" Visible="false">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="{_root_}Details" title="Your Details">Your Details</a></li>
+                        <li><a href="{_root_}Counters" title="Counters">Counters</a></li>
+                        <li><a href="{_root_}APIForm" title="Send a test Manage your account">Send a Message</a></li>
+                        <li><a href="{_root_}Logout">Log out</a></li>
+                    </ul>
+                    </asp:Literal>
+                </div>
+            </div>
+        </div>
+        <div class="container body-content">
+            <div>
+                <asp:Literal runat="server" ID="myMessage" Visible="false" />
+            </div>
+
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - NiceApi.Net - <a href="mailto:support@NiceApi.net?Subject=Contact" target="_top">Contact Us</a></p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>
