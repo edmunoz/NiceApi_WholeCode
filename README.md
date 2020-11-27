@@ -15,4 +15,5 @@ We are available for support. We charge 25USD for a window of 15 minutes support
 * We will answer your question or give you our WhatsApp contact inforamtion for further help
 
 What a great day!
+
 Enjoy! Martin
