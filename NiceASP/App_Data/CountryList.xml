@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- This file needs to be in \HostingSpaces\mgillman\_NiceSolution\ASP_Zap\ServerState\ -->
+<CountryList>
+  <CC20>Egypt</CC20>
+  <CC256>Uganda</CC256>
+  <CC27>S.Africa</CC27>
+  <CC31>Holand</CC31>
+  <CC34>Spain</CC34>
+  <CC351>Portugal</CC351>
+  <CC39>Italy</CC39>
+  <CC40>Romania</CC40>
+  <CC44>UK</CC44>
+  <CC49>Germany</CC49>
+  <CC506>C. Rica</CC506>
+  <CC51>Peru</CC51>
+  <CC52>Mexico</CC52>
+  <CC54>Argentina</CC54>
+  <CC55>Brazil</CC55>
+  <CC56>Chile</CC56>
+  <CC57>Colombia</CC57>
+  <CC58>Venezuela</CC58>
+  <CC60>Malaysia</CC60>
+  <CC62>Indonesia</CC62>
+  <CC66>Thailand</CC66>
+  <CC673>Brunei</CC673>
+  <CC86>China</CC86>
+  <CC90>Turkey</CC90>
+  <CC91>India</CC91>
+  <CC92>Pakistan</CC92>
+  <CC966>S. Arabia</CC966>
+  <CC971>A.Emirates</CC971>
+  <CC972>Israel</CC972>
+  <CC98>Iran</CC98>
+
+</CountryList>
