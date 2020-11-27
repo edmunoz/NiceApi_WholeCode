@@ -1,0 +1,9 @@
+﻿
+<p>Hi {Name}</p>
+You have registed without a telephone number. 
+For your registration we need to know your telephone number to send WhatsApp messages to.
+
+Please reply to this email letting us know your telephone number, 
+including the country code.
+
+<p>Your NiceApi.net team.</p>

@@ -1,0 +1,6 @@
+﻿
+<p>Hi {Name}</p>
+Your registration cannot be completed. It seems you registred with a telephone number which does not have WhatsApp installed.
+Please install WhatsApp on your phone and then go to settings and click on your profile. Then take a screenshot and email the screenshot to us.
+
+<p>Your NiceApi.net team.</p>

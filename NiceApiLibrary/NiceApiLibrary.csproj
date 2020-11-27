@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3984A9C7-4EB5-45E1-AEC6-A77C9945DE3F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NiceApiLibrary</RootNamespace>
+    <AssemblyName>NiceApiLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>NiceApiLibrary_StrongNameKey.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.111.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>_3rdParty\netFx35_Win32_1.0.110.0\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ASP_AppCode\APIActualSending.cs" />
+    <Compile Include="ASP_AppCode\CountryListLoader.cs" />
+    <Compile Include="ASP_AppCode\DataFile_Base.cs" />
+    <Compile Include="ASP_AppCode\DataFile_Loopback.cs" />
+    <Compile Include="ASP_AppCode\DataFile_ScreenShot.cs" />
+    <Compile Include="ASP_AppCode\MyLog.cs" />
+    <Compile Include="Data_AppUserFileHandling_SQLite.cs" />
+    <Compile Include="Data_AppUserFile_CheckerBase.cs" />
+    <Compile Include="Data_AppUserFile_Checker_Free.cs" />
+    <Compile Include="Data_AppUserFile_Checker_Monthly.cs" />
+    <Compile Include="Data_AppUserFile_Checker_MonthlyDifPrice.cs" />
+    <Compile Include="Data_AppUserFile_Checker_PayAsSent.cs" />
+    <Compile Include="Data_AppUserFile_Checker_SystemDuplication.cs" />
+    <Compile Include="Data_AppUserFile_Extensions.cs" />
+    <Compile Include="Data_AppUserWalletHandling_File.cs" />
+    <Compile Include="Data_AppUserWalletHandling_SQLite.cs" />
+    <Compile Include="Data_Net__00NormalMessage_File.cs" />
+    <Compile Include="Data_Net__00NormalMessage_SQLite.cs" />
+    <Compile Include="Data_Net__02ScreenshotRequest_File.cs" />
+    <Compile Include="Data_Net__02ScreenshotRequest_SQLite.cs" />
+    <Compile Include="Data_Net__04CheckTelNumbers_File.cs" />
+    <Compile Include="Data_Net__04CheckTelNumbers_SQLite.cs" />
+    <Compile Include="DirectTel_Processing.cs" />
+    <Compile Include="DSSwitch.cs" />
+    <Compile Include="Data_AppUserFileHandling_File.cs" />
+    <Compile Include="EMail.cs" />
+    <Compile Include="EMail_Data.cs" />
+    <Compile Include="MessageProcessing.cs" />
+    <Compile Include="MessageProcessing_API.cs" />
+    <Compile Include="MessageProcessing_APIMsgQueue.cs" />
+    <Compile Include="MessageProcessing_TrayFrom.cs" />
+    <Compile Include="MessageProcessing_TrayTo.cs" />
+    <Compile Include="MyExtensions.cs" />
+    <Compile Include="PriceLevelHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
+    <Compile Include="SQLiteHelper.cs" />
+    <Compile Include="Test.cs" />
+    <Compile Include="UpgradeInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="NiceApiLibrary_StrongNameKey.snk" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\Footer.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\Header.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\JustActivated.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\Reg_TelWrong_EmailText.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\RegistrationEmialText.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\WholeHeader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\LittleActivityEmialText.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\ServerMove032018EmialText.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\Reg_NoTel_EmailText.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Embedded\UpgradeEmail.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\NiceApiLibrary_low\NiceApiLibrary_low.csproj">
+      <Project>{a8bad597-a4b9-4969-8822-f0b3d1c304ca}</Project>
+      <Name>NiceApiLibrary_low</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

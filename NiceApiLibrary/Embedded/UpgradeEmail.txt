@@ -1,0 +1,12 @@
+﻿
+<p>Hi {Name}</p>
+<br/>
+First of all we would like to thank you for your interest in our service.<br/>
+You have registered on our website on {RegistrationDate} and since then you have sent {SentCount} Whatsapp messages.<br/>
+As you have a free account, you are limited to 200 messages. <br/>
+Please check your current counters at <a href="https://niceapi.net/Counters">https://niceapi.net/Counters</a>. <br/>
+Please visit <a href="https://niceapi.net/Price">https://niceapi.net/Price</a> and consider an upgrade to one of our flat rate paid accounts.<br/>
+<br/>
+Please reply to this email should you have any questions.<br/>
+<br/>
+<p>Your NiceApi.net team.</p>

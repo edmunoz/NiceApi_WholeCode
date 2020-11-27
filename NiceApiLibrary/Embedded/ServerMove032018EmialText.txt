@@ -1,0 +1,11 @@
+﻿
+<p>Hi {Name}</p>
+We are exited to let you know that we update our hardware. This is the core part of our service what lets your application send you whatsapp messages every day.<br/>
+<br/>
+This upgrade will take place on 21/03/2018. Your application will still be able to queue messages, but it might take up to 23/03/2018 for the messages to be delivered.<br/>
+<br/>
+We apologise for any inconvenience this might cause and hope you will keep enjoying using our great service.<br/>
+<br/>
+Please reply to this email should you have any question about this upgrade.<br/>
+<br/>
+<p>Your NiceApi.net team.</p>

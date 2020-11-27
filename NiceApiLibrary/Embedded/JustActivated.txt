@@ -1,0 +1,52 @@
+﻿
+<p>Hi {Name}</p>
+We are pleased to inform you that your NiceApi.net account is now active.<br/>
+Please keep this email in a secure place as it shows your details.<br/>
+<br/>
+Your details are:<br/>
+<table>
+  <tr>
+    <td>User name:</td>
+    <td>{Name}</td>
+  </tr>
+  <tr>
+    <td>Email</td>
+    <td>{Email}</td>
+  </tr>
+  <tr>
+    <td>Password</td>
+    <td>{Password}</td>
+  </tr>
+  <tr>
+    <td>X-APIId</td>
+    <td>{APIId}</td>
+  </tr>
+  <tr>
+    <td>Mobile # 1</td>
+    <td>{Mobile1}</td>
+  </tr>
+  <tr>
+    <td>Mobile # 2</td>
+    <td>{Mobile2}</td>
+  </tr>
+  <tr>
+    <td>Mobile # 3</td>
+    <td>{Mobile3}</td>
+  </tr>
+  <tr>
+    <td>Mobile # 4</td>
+    <td>{Mobile4}</td>
+  </tr>
+  <tr>
+    <td>Mobile # 5</td>
+    <td>{Mobile5}</td>
+  </tr>
+</table>
+<br/>
+- Please go to <a href="https://NiceApi.net/Details">NiceApi.net/Details</a> to see your details.<br/>
+- Please go to <a href="https://NiceApi.net/APIForm">NiceApi.net/APIForm</a> to send a test message.<br/>
+- Please copy and edit the code at <a href="https://NiceApi.net/HowToUse">NiceApi.net/HowToUse</a> to create your application which sends you Whatsapp messages.<br/>
+<br/>
+We offer free technical support should you have problems implementing our service into your application.</br>
+Please feel free to reply to this email should you have any questions.<br/><br/>
+<p>Your NiceApi.net team.</p>

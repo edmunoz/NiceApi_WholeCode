@@ -1,0 +1,5 @@
+﻿
+<p>Welcome to NiceApi.net.</p>
+To verify your email please click <a href="{ActivationLink}"> here </a>or enter the exact line below in a web browser.<br><br>
+{ActivationLink}<br><br>
+<p>Your NiceApi.net team.</p>
