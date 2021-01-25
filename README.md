@@ -12,7 +12,7 @@ Host all of it yourself or host the backend yourself and use the existing [https
 We are available for support. We charge 25USD for a window of 15 minutes support. 
 * Please make the [payment](https://PayPal.me/NiceAPI/25usd)
 * Send an email at support@niceapi.net with your question. Please put the PayPal transaction number in the subject.
-* We will answer your question or give you our WhatsApp contact inforamtion for further help
+* We will answer your question or give you our WhatsApp contact information for further help
 
 What a great day!
 
