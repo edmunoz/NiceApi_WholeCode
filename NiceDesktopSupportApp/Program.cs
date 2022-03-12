@@ -35,12 +35,17 @@ namespace NiceDesktopSupportApp
             ques.Add(new QuestionOption("show Lib Version", Others.LibVersion));
             //            ques.Add(new QuestionOption("Just a log message", Others.JustALogMessage));
             ques.Add(new QuestionOption("Send Whatsapp messages...", WhatsappMessages.Go));
-            ques.Add(new QuestionOption("Send Whatsapp messages Sys01", WhatsappMessages.GoSys01));
-            ques.Add(new QuestionOption("Send Whatsapp messages Sys02", WhatsappMessages.GoSys02));
-            ques.Add(new QuestionOption("Send Whatsapp messages Sys03", WhatsappMessages.GoSys03));
-            ques.Add(new QuestionOption("Send Whatsapp messages Sys03 group", WhatsappMessages.GoSys03group));
-            ques.Add(new QuestionOption("Send Whatsapp messages Sys04", WhatsappMessages.GoSys04));
-            ques.Add(new QuestionOption("Send Whatsapp messages SysTest", WhatsappMessages.GoSysTest));
+
+            
+            //ques.Add(new QuestionOption("Send Whatsapp messages Sys01", WhatsappMessages.GoSys01));
+            //ques.Add(new QuestionOption("Send Whatsapp messages Sys02", WhatsappMessages.GoSys02));
+            //ques.Add(new QuestionOption("Send Whatsapp messages Sys03", WhatsappMessages.GoSys03));
+            //ques.Add(new QuestionOption("Send Whatsapp messages Sys03 group", WhatsappMessages.GoSys03group));
+            //ques.Add(new QuestionOption("Send Whatsapp messages Sys04", WhatsappMessages.GoSys04));
+            //ques.Add(new QuestionOption("Send Whatsapp messages SysTest", WhatsappMessages.GoSysTest));
+
+
+
             //            ques.Add(new QuestionOption("Send ANY email", SendEmail.All));
             ques.Add(new QuestionOption("Show Logs", ShowLogs.Go));
             //ques.Add(new QuestionOption("Test SQL Copy", SQLCopy.Go));

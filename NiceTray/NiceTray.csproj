@@ -192,9 +192,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="BuildNote.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\NiceApiLibrary_low\NiceApiLibrary_low.csproj">
       <Project>{a8bad597-a4b9-4969-8822-f0b3d1c304ca}</Project>
       <Name>NiceApiLibrary_low</Name>

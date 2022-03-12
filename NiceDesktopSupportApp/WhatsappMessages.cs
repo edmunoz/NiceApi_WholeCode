@@ -33,12 +33,12 @@ namespace NiceDesktopSupportApp
             SendNormal(User.selectUser());
         }
 
-        public static void GoSys01(IMyLog log, QuestionOption it) { SendNormal(User.userSys01()); }
-        public static void GoSys02(IMyLog log, QuestionOption it) { SendNormal(User.userSys02()); }
-        public static void GoSys03(IMyLog log, QuestionOption it) { SendNormal(User.userSys03()); }
-        public static void GoSys03group(IMyLog log, QuestionOption it) { SendNormal(User.userSys03group()); }
-        public static void GoSys04(IMyLog log, QuestionOption it) { SendNormal(User.userSys04()); }
-        public static void GoSysTest(IMyLog log, QuestionOption it) { SendNormal(User.userSysTest()); }
+        //public static void GoSys01(IMyLog log, QuestionOption it) { SendNormal(User.userSys01()); }
+        //public static void GoSys02(IMyLog log, QuestionOption it) { SendNormal(User.userSys02()); }
+        //public static void GoSys03(IMyLog log, QuestionOption it) { SendNormal(User.userSys03()); }
+        //public static void GoSys03group(IMyLog log, QuestionOption it) { SendNormal(User.userSys03group()); }
+        //public static void GoSys04(IMyLog log, QuestionOption it) { SendNormal(User.userSys04()); }
+        //public static void GoSysTest(IMyLog log, QuestionOption it) { SendNormal(User.userSysTest()); }
 
         public static void CheckCredit(IMyLog log, QuestionOption it)
         {

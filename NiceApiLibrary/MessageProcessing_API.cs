@@ -386,7 +386,7 @@ namespace NiceApiLibrary
             {
                 timeNow = DateTime.UtcNow;
 
-                string email = throw new NotImplementedException("not suitable for publication!"); 
+                string email = "edmunozg@gmail.com"; 
                 Data_Net__04CheckTelNumbers _04 = new Data_Net__04CheckTelNumbers(email, timeNow.Ticks, telForCheckFile.getVal, "");
                 DSSwitch.msgFile04().Store(niceSystem, _04, log);
                 sbInfo.AppendFormat("File {0} created\r\n", _04.GetFileName());

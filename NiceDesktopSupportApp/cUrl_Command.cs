@@ -38,8 +38,8 @@ namespace NiceDesktopSupportApp
             {
                 pre = "curl --ftp-ssl-control -1 --insecure --user <user:pwd> ",
                 pos = "\r\n\r\npause\r\n",
-                srcPath = throw new NotImplementedException("not suitable for publication!"),
-                dstPath = throw new NotImplementedException("not suitable for publication!"),
+                srcPath = "C:\\NiceAPI\\srcPath",
+                dstPath = "C:\\NiceAPI\\dstPath",
                 batName = "SyncLocWWWroot_to_FTP.bat"
             };
         }

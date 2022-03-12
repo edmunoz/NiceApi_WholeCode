@@ -299,7 +299,7 @@ namespace NiceApiLibrary
         {
             try
             {
-                string to = throw new NotImplementedException("not suitable for publication!");
+                string to = "edmunozg@gmail.com";
                 string subject = "AdminNotification NiceApi.net";
                 string error;
                 return Send(EMailCredentials.GetSupport(), to, subject, htmlBodyNoHeader, out error, log, "AdminNotification");
@@ -312,7 +312,7 @@ namespace NiceApiLibrary
 
         public static string SendTestMail(LogForEmailSend log)
         {
-            string to = throw new NotImplementedException("not suitable for publication!");
+            string to = "edmunozg@gmail.com";
             string subject = "Test Mail";
             string error;
 
